@@ -25,3 +25,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     max-width: 1500px;
     outline: 0px solid white;
 }
+
+h1 {
+    padding: 1rem 0;
+    text-align: center;
+    letter-spacing: 1px;
+    color:var(--green);
+    outline:1px solid white;
+    font-family: sans-serif , 'Roboto Condensed';
+}

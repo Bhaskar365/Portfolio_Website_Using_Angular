@@ -1,0 +1,28 @@
+:host{
+    display: block;
+    color:white;
+    padding:3rem 2rem;  
+}
+
+.container{
+    gap:2rem;
+    display: grid;
+}
+
+table {
+    font-size: 1.3rem;
+    outline:1px solid white;
+}
+
+table tr{
+    height:40px;
+}
+
+table tr td{
+    padding-left:0.5rem;
+}
+
+table tr td:nth-child(even) {
+    color:var(--green)
+}
+
