@@ -18,8 +18,11 @@ export class PersonalInformationComponent implements OnInit{
 //test text
 
   aboutMe:string[] = [
-    'Hi sofwejlkjwelkfjwelkfj wlkejflkwejflkwejfkl;wjef;lkwjef;lkjweflkjwe;lfjwe;if jwlkejflkwejflkjwefj ',
-    'asdkfj hldfhelk ejlkf elkfj elkf jelf ej'
+    'Software develeoper for 25 years . Currently CEO of Google LLC',
+    'Software develeoper for 25 years . Currently CEO of Google LLC',
+    'Software develeoper for 25 years . Currently CEO of Google LLC',
+    'Software develeoper for 25 years . Currently CEO of Google LLC',
+    'Software develeoper for 25 years . Currently CEO of Google LLC'
   ];
 
   constructor() { }

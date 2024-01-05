@@ -1,1 +1,10 @@
-<p>work-experience works!</p>
+<div class="container">
+    <h1>Work Experience</h1>
+
+    <section *ngFor="let work of workExpList">
+        <h2>{{work.company}}</h2>
+        <h3>{{work.role}}</h3>
+        <h4>{{work.duration}}</h4>
+        <h4>{{work.description}}</h4>
+    </section>
+</div>

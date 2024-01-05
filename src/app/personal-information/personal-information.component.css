@@ -9,20 +9,21 @@
     display: grid;
 }
 
-table {
-    font-size: 1.3rem;
-    outline:1px solid white;
+/* PC */
+:host.pc {
+    margin-top:3rem;
 }
 
-table tr{
-    height:40px;
+:host.pc .container {
+    grid-template-columns: 1fr 1fr;
 }
 
-table tr td{
-    padding-left:0.5rem;
+:host.pc h1 {
+    grid-column: 1/3;
 }
 
-table tr td:nth-child(even) {
-    color:var(--green)
+:host.pc section,
+:host.pc table {
+    width:80%;
+    margin:auto;
 }
-
