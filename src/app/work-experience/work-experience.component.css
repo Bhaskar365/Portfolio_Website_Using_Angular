@@ -1,14 +1,61 @@
-section h2 {
-    display: block;
+:host {
+    display:block;
     color:white;
+    padding:3rem 2rem;
 }
 
-section h3 {
-    display: block;
-    color:white;
+ul:has(ul) {
+    padding:0%;
+    list-style:none;
 }
 
-section h4 {
-    display: block;
-    color:white;
+ul li:has(ul) {
+    margin-top: 2rem;
 }
+
+ul li h2 {
+    color:var(--green);
+}
+
+ul li h4 {
+    color: var(--gray-light);
+}
+
+/* PC */
+:host.pc ul li:has(ul) {
+    width:max-content;
+    margin:5rem;
+    position: relative;
+}
+
+:host.pc ul li:has(ul)::before {
+    background-color: var(--green);
+    position:absolute;
+    content:'';
+    height:20px;
+    width:20px;
+    left:-60px;
+    top:5px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+:host.pc ul li:has(ul)::after {
+    content:'';
+    position:absolute;
+    width: 1px;
+    height: 170%;
+    left:-50px;
+    top:22%;
+    z-index: 1;
+    background-color: var(--gray-light);
+}
+
+:host.pc ul li:has(ul):last-child::after {
+    height: 100%;
+}
+
+
+
+
+
